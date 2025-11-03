@@ -4,6 +4,24 @@ __pycache__/
 *$py.class
 *.so
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
 venv/
 env/
 ENV/
@@ -11,28 +29,52 @@ ENV/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb_checkpoints/
 
-# Data
-data/crypto_data/*
-!data/crypto_data/.gitkeep
+# IPython
+profile_default/
+ipython_config.py
 
-# Results
-results/plots/*
-results/models/*
-!results/plots/.gitkeep
-!results/models/.gitkeep
+# pyenv
+.python-version
 
-# IDEs
+# Environment variables
+.env
+.env.local
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.DS_Store
+
+# Data files (if too large, uncomment to ignore)
+# *.csv
+# data/
+
+# Model outputs
+models/
+*.pkl
+*.h5
+*.joblib
+
+# Logs
+*.log
+logs/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Kaggle
-kaggle.json
+# Output files
+output/
+results/
+figures/
+*.png
+*.jpg
+*.pdf
 
+# Generated HTML exports from notebooks
+*.html
